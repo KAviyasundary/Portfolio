@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font for a nicer look on the logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header with logo and hamburger menu -->
+  <header>
+    <div class="logo">Kaviya Sundary S</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Main</a></li>
+        <li><a href="graphics.html">Graphics</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Image -->
+  <section class="main-image">
+    <img src="front copy.JPG" alt="Main Image">
+  </section>
+
+  <div style="text-align:center; margin: 20px 0;">
+  <a href="resume.html" class="btn">View Resume</a>
+</div>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Select a Category</h2>
+    <div class="category-buttons">
+      <a href="graphics.html" class="btn">Graphics Designer</a>
+      <a href="software.html" class="btn">Web Developer</a>
+    </div>
+  </section>
+
+  <!-- Contact Section: Contact info and Message Form in one row -->
+  <section id="contact" class="contact-form">
+    <h2>Contact &amp; Message</h2>
+    <div class="contact-box">
+      <div class="contact-info">
+        <ul>
+          <li>Email: <a href="mailto:kavihope18@email.com">
+              kavihope18@email.com</a></li>
+          <li>LinkedIn: <a href="http://www.linkedin.com/in/kaviya-sundary-449736219" target="_blank">
+              linkedin.com</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/kavi_hope21/" target="_blank">
+              kavi_hope18</a></li>
+          <li>GitHub: <a href="https://github.com/KAviyasundary" target="_blank">
+              github.com</a></li>
+        </ul>
+      </div>
+      <form id="msgForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bottom Cover Image -->
+  <section class="cover-image-bottom">
+    <img src="cover.JPG" alt="Footer Image">
+  </section>
+
+  <footer>
+    <p>© 2025 Kavi Hope</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

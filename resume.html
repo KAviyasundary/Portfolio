@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Resume</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="graphics.html">Graphics</a></li>
+      <li><a href="software.html">Software</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="resume">
+  <div class="resume-container">
+
+    <div class="resume-card">
+      <img src="Kaviya_Graphics_Resume.jpg"
+           onclick="openPDF('Kaviya_Graphics_Resume.pdf')">
+      <br>
+      <a href="Kaviya_Graphics_Resume.pdf" download class="btn">
+        Download Graphics Resume
+      </a>
+    </div>
+
+    <div class="resume-card">
+      <img src="Kaviya_Software_Resume.jpg"
+           onclick="openPDF('Kaviya_Software_Resume.pdf')">
+      <br>
+      <a href="Kaviya_Software_Resume.pdf" download class="btn">
+        Download Software Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- PDF Popup -->
+<div id="pdfViewer" class="pdf-viewer">
+  <button onclick="closePDF()" class="close-btn">Close</button>
+  <iframe id="pdfFrame"></iframe>
+</div>
+
+<script>
+function openPDF(file) {
+  document.getElementById("pdfFrame").src = file;
+  document.getElementById("pdfViewer").style.display = "flex";
+}
+
+function closePDF() {
+  document.getElementById("pdfViewer").style.display = "none";
+  document.getElementById("pdfFrame").src = "";
+}
+</script>
+
+</body>
+</html>
