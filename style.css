@@ -233,6 +233,16 @@ footer {
   height: auto;
 }
 
+/* Fix for YouTube iframe videos */
+.video-motion iframe,
+.video-edit iframe {
+  width: 900px;
+  max-width: 95%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
 /* Photoshop page image */
 .photoshop {
   display: flex;
