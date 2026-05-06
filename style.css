@@ -208,37 +208,20 @@ footer {
   flex-wrap: wrap;
 }
 
-.video-motion {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.video-motion video {
-  width: 900px;
-  max-width: 100%;
-  height: auto;
-}
-
-/*video pages */
+/* Responsive YouTube iframe */
+.video-motion,
 .video-edit {
   display: flex;
   justify-content: center;
   padding: 40px 0;
 }
 
-.video-edit video {
-  width: 900px;     
-  max-width: 95%;
-  height: auto;
-}
-
-/* Fix for YouTube iframe videos */
 .video-motion iframe,
 .video-edit iframe {
-  width: 900px;
-  max-width: 95%;
-  height: 500px;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;   /* keeps perfect video ratio */
+  height: auto;
   border: none;
   border-radius: 10px;
 }
